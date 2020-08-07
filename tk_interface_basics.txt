@@ -1,0 +1,30 @@
+# Window Properties
+window = Tk() # Create new window object
+
+window.geometry('350x200')
+window.title("Welcome") # Assign program Title
+
+# Label Properties
+lbl = Label(window, text="Hello", font=("Arial Bold", 50)) # Create new label
+lbl.grid(column=0, row=0) # Required for Label to show
+
+
+# Button Properties
+def clicked():
+    res = "Welcome to " + txt.get()
+    lbl.configure(text= res)
+btn = Button(window, text="click me", command=clicked)
+btn.grid(column=1, row=0)
+
+txt = Entry(window, width=10)
+txt.grid(column=1, row=1)
+
+# Menu Bar Setup
+menu = Menu(window)
+
+#
+new_item = Menu(menu, tearoff=0)
+new_item.add_command(label = 'New', command=clicked)
+menu.add_cascade(label="File", menu = new_item)
+
+window.config(menu=menu)

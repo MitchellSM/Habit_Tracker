@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<HabitData>
+	<dayData date="ddd-mm-yyyy" day="MONDAY">
+		<smokes>
+			<time>1634</time>	
+			<time>1634</time>	
+			<time>1634</time>	
+			<time>1234</time>
+		</smokes>
+		
+		<meals>
+			 <breakfast>
+				<time> 123</time>
+				<item> </item>
+				<place> </place>
+			</breakfast>
+
+			<lunch>
+				<time> </time>
+				<item> </item>
+				<place> </place>
+			</lunch>
+
+			<dinner>
+				<time> </time>
+				<item> </item>
+				<place> </place>
+			</dinner>
+		</meals>
+
+		<drinks>
+			<coffee />
+			<alcohol />
+		</drinks>
+
+		<others>
+			<meds />
+			<exercise />
+			<thc />
+		</others>
+    </dayData>
+
+<dayData date="01-01-2020" day="WEDNESDAY"><smokes><time>1234</time><time>1235</time><time>1235</time></smokes><meals /><drinks /><others /></dayData>
+
+<dayData date="--" day="DEFAULT"><smokes /><meals /><drinks /><others /></dayData>
+<dayData date="24-02-2020" day="MONDAY"><smokes><time>1015</time></smokes><meals /><drinks /><others /></dayData>
+</HabitData>
